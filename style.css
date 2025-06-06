@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'SourceSerifItalic';
+
+    src: url('../fonts/SourceSerif4-Italic.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'SourceSerifBlack';
+
+    src: url('../fonts/SourceSerif4-Black.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'SourceSerif';
+
+    src: url('../fonts/SourceSerif4-Regular.woff') format('woff'),
+}
+
+:root {
+    --accent-color: #8f2222;
+    --blurple: #7289DA;
+}
+
+
+html,
+body {
+    background: #030303;
+    color: #ffffff;
+
+    font: 16px/1.8 SourceSerif, serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 0rem;
+    width: 100%;
+    height: 100%;
+    cursor: url('images/cursor.png'), auto;
+}
+
+.title{
+    font: 16px/1.8 SourceSerifItalic, serif;
+}
+
+.notdone{
+    text-decoration: line-through;
+}
+
+.sorry{
+    align-items: center;
+}
+
+h1 {
+    user-select: none;
+    font: 2.5rem/1.5 SourceSerifItalic, serif;
+    margin: 0;
+    background-image: linear-gradient(white, rgb(255, 165, 165));
+    color: transparent;
+    background-clip: text;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+div.toc {
+    width: 20rem;
+}
+
+ul 
+{ list-style-type: "✯ "; }
+
+div.subtext {
+    width: 250px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 20rem) {
+    div.logo-icon {
+        width: 5rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition-duration: 0.2s;
+    cursor: url('images/cursor.png'), auto;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 0.5rem var(--accent-color);
+    transition-duration: 0.2s;
+}
+
+::selection {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    html,
+    body {
+        display: inherit !important;
+    }
+
+    body {
+        padding: 2rem;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+s { 
+    text-decoration: line-through;
+}
+
+
+img {
+    display: block;
+    margin-right: auto;
+    width: 100%;
+}
+
+h2{
+    font: 0.7rem SourceSerifItalic, serif;
+    display: block;
+    margin-left: -20rem;
+    margin-right: auto;
+}
+
+.discord {
+    display: block;
+    cursor: url('images/cursor.png'), auto;
+    border: none;
+    background-color: inherit;
+    background: -webkit-linear-gradient(#eee, #a383ee);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font: 3rem SourceSerif, serif;
+    color:var(--accent-color);
+    margin-right: 2rem;
+}
+
+.discord:hover {
+    text-decoration: none;
+    border: none;
+    background-color: inherit;
+    background: -webkit-linear-gradient(#eee, #5d20ec);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.insta {
+    text-align:center;
+    display: block;
+    cursor: url('images/cursor.png'), auto;
+    border: none;
+    background-color: inherit;
+    background: -webkit-linear-gradient(#ff9050, #f85ed1);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font: 3rem SourceSerif, serif;
+    margin-right: 2rem;
+}
+
+.insta:hover {
+    border: none;
+    text-decoration: none;
+    background-color: inherit;
+    background: -webkit-linear-gradient(#ff8d4c, #ff2bca);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    transition-duration: 0.2s;
+}
+
+.email {
+    text-align:center;
+    display: block;
+    cursor: url('images/cursor.png'), auto;
+    border: none;
+    background-color: inherit;
+    background: -webkit-linear-gradient(#ffffff, #ff4343);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font: 3rem SourceSerif, serif;
+    margin-right: 2rem;
+}
+
+.email:hover {
+    border: none;
+    text-decoration: none;
+    background-color: inherit;
+    background: -webkit-linear-gradient(#ffffff, #ff0d0d);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    transition-duration: 0.2s;
+}
+
+.now-playing {
+    height: 5rem;
+}
